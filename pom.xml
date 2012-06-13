@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>          
   <name>Paho :: Administrative Parent</name>
   <description>Administrative parent pom for Paho modules</description>   
-  <url>http://www.eclipse.org/paho</url>       
+  <url>${paho.url}</url>
   <inceptionYear>2011</inceptionYear>
   
   
@@ -49,6 +49,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <paho.url>http://www.eclipse.org/paho</paho.url>
   </properties>
 
 	<build>
