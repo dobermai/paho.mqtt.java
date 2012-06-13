@@ -67,6 +67,19 @@
 		</plugins>
 	</build>
 	
-	<repositories>
-	</repositories>
+    <modules>
+        <module>org.eclipse.paho.client.mqttv3</module>
+        <module>org.eclipse.paho.client.mqttv3.internal.traceformat</module>
+        <module>org.eclipse.paho.sample.mqttv3app</module>
+    </modules>
+	
+	<dependencyManagement>
+      <dependencies>
+        <dependency>
+          <groupId>org.eclipse.paho</groupId>
+          <artifactId>jpaho-mqtt-client</artifactId>
+          <version>${project.version}</version>
+        </dependency>
+      </dependencies>
+    </dependencyManagement>
 </project>
